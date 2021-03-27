@@ -8,9 +8,11 @@
 import UIKit
 import CoreData
 class ShowAllFavouritesViewController: UIViewController {
+   
+    @IBOutlet weak var tableView: UITableView!
     var context:NSManagedObjectContext!
     var articleObjects : [NSManagedObject]?
-    @IBOutlet weak var tableView: UITableView!
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         openDatabse()
@@ -28,16 +30,10 @@ class ShowAllFavouritesViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         
-        
         let nib = UINib(nibName: "FavouirteTableViewCell", bundle: nil)
        tableView.register(nib, forCellReuseIdentifier: FavouirteTableViewCell.reuseIdentifier)
-        
-        
     }
     
-    @objc func backToArticles() {
-        self.dismiss(animated: true, completion: nil)
-    }
     func openDatabse()
     {
     
@@ -46,11 +42,11 @@ class ShowAllFavouritesViewController: UIViewController {
          return
      }
      
-    context =
-       appDelegate.persistentContainer.viewContext
+    context = appDelegate.persistentContainer.viewContext
         
         fetchData()
     }
+    
     func fetchData()
       {
           print("Fetching Data..")
@@ -59,15 +55,14 @@ class ShowAllFavouritesViewController: UIViewController {
           do {
               let result = try context.fetch(request)
             self.articleObjects = result as? [NSManagedObject]
-              for data in result as! [NSManagedObject] {
-                  let title = data.value(forKey: "title") as! String
-                  let article_image = data.value(forKey: "article_image") as! String
-              }
+            
           } catch {
               print("Fetching data Failed")
           }
       }
 
- 
+    @objc func backToArticles() {
+        self.dismiss(animated: true, completion: nil)
+    }
 
 }

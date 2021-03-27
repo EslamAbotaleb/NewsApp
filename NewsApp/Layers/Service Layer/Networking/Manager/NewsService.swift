@@ -1,10 +1,6 @@
-//
-//  StoreClient.swift
-//  EcwidStore
-//
-//  Created by Logista on 7/26/20.
-//  Copyright © 2020 Logista. All rights reserved.
-//
+
+//  NewsService.swift
+
 
 import UIKit
 
@@ -12,7 +8,7 @@ import UIKit
 class NewsServiceApi {
     
     static let shared = NewsServiceApi()
-    private let router = Router<StoreAPI>()
+    private let router = Router<NewsAPI>()
     let cache = NSCache<NSString,UIImage>()
     
     func getAllSources(completion: @escaping (Result<AllSourceModel,StoreError>) -> Void){

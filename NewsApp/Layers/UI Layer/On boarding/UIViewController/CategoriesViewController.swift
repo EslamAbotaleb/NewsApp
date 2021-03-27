@@ -26,6 +26,41 @@ class CategoriesViewController: BaseViewController {
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
         collectionView.allowsMultipleSelection = true
+        
+        
+        NetworkReachability.shared.reach.whenReachable = { _ in
+            self.getAllCategoriesFromServer()
+        }
+        NetworkReachability.shared.reach.whenUnreachable = { _ in
+            self.somethingError()
+        }
+        
+        NetworkReachability.isReachable { _ in
+            self.getAllCategoriesFromServer()
+        }
+        
+        
+        NetworkReachability.isUnreachable { _ in
+            self.somethingError()
+            
+        }
+        
+        
+       
+    }
+    
+    func somethingError() {
+        self.showLoadingView()
+        
+        self.view.endEditing(true)
+        let errorServiceLocalizations = ErrorServiceLocalizations.init(httpStatus: 0, errorType: .server)
+        let errorTitle = errorServiceLocalizations.errorTitle
+        let errorDescription = errorServiceLocalizations.errorDescription
+        self.showErrorView(errorTitle: errorTitle, errorDescription: errorDescription)
+        self.view.isUserInteractionEnabled = false
+    }
+    
+    func getAllCategoriesFromServer() {
         NewsServiceApi.shared.getAllSources { (result) in
             self.showLoadingView()
 

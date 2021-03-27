@@ -266,7 +266,6 @@
 				A6199834260E4F4900A52105 /* Manager */,
 				A6199838260E4F4900A52105 /* NetworkConfiguration */,
 				A619979D260E165F00A52105 /* ErrorService */,
-				A619978D260E15F600A52105 /* NetworkService */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -361,15 +360,6 @@
 			path = OnBoardingView;
 			sourceTree = "<group>";
 		};
-		A619978D260E15F600A52105 /* NetworkService */ = {
-			isa = PBXGroup;
-			children = (
-				A619978F260E160E00A52105 /* NetworkReachability.swift */,
-				A6199790260E160E00A52105 /* NetworkServiceResult.swift */,
-			);
-			path = NetworkService;
-			sourceTree = "<group>";
-		};
 		A619979D260E165F00A52105 /* ErrorService */ = {
 			isa = PBXGroup;
 			children = (
@@ -393,6 +383,8 @@
 		A6199838260E4F4900A52105 /* NetworkConfiguration */ = {
 			isa = PBXGroup;
 			children = (
+				A619978F260E160E00A52105 /* NetworkReachability.swift */,
+				A6199790260E160E00A52105 /* NetworkServiceResult.swift */,
 				A6199839260E4F4900A52105 /* NetworkRouter.swift */,
 				A619983A260E4F4900A52105 /* HTTPTask.swift */,
 				A619983B260E4F4900A52105 /* HTTPMethod.swift */,

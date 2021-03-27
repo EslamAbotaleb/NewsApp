@@ -14,7 +14,7 @@ extension CategoriesViewController: UICollectionViewDelegate, UICollectionViewDa
             fatalError("Cannot found CountriesCollectionViewCell")
         }
        
-        //Show tickImage if the cell is selected and hide tickImage if cell is NotSelected/deSelected.or whatever action you want to perform in case of selection and deselection of cell.
+      
         cell.nameCategoryLabel.text = self.allSources?.unique{$0.category}[indexPath.row].category
 
         if _selectedCells.contains(indexPath) {
