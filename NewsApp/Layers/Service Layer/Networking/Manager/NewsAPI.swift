@@ -18,6 +18,7 @@ public enum StoreAPI {
     //MARK:- ROOM APIs
     
     case allSources
+    case topHeadline(country: String,category: String)
    
 
 }
@@ -42,6 +43,8 @@ extension StoreAPI: EndPointType {
         switch self {
         case .allSources:
             return "sources"
+        case .topHeadline:
+            return "top-headlines"
       
         }
     }
@@ -51,8 +54,9 @@ extension StoreAPI: EndPointType {
     
     var bodyParameters: [String:Any]?{
         switch self {
-        case .allSources:
+        case .allSources, .topHeadline:
             return nil
+            
         }
     }
     
@@ -89,6 +93,13 @@ extension StoreAPI: EndPointType {
             var parameter: Parameters = [String : Any]()
             parameter["apiKey"] = Keys.apiKey
             return parameter
+        case .topHeadline(let country,let category):
+            var parameter: Parameters = [String : Any]()
+            parameter["country"] = country
+            parameter["category"] = category
+
+            parameter["apiKey"] = Keys.apiKey
+            return parameter
         }
     }
     //MARK:- CONFIGURE REQUESTS
@@ -102,7 +113,7 @@ extension StoreAPI: EndPointType {
     
     var task: HTTPTask {
         switch self {            
-        case .allSources:
+        case .allSources, .topHeadline:
             return .requestParameters(bodyParameters: bodyParameters, bodyEncoding: .urlEncoding, urlParameters: urlParameters)
 //            return .requestParameters(bodyParameters: bodyParameters, bodyEncoding: .urlEncoding, urlParameters: urlParameters)
 //        default:

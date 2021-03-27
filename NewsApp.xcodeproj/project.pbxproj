@@ -58,6 +58,16 @@
 		A6199879260E6FC100A52105 /* CategoriesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6199877260E6FC100A52105 /* CategoriesViewController.xib */; };
 		A619987E260E71D500A52105 /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A619987C260E71D500A52105 /* CategoryCollectionViewCell.swift */; };
 		A619987F260E71D500A52105 /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A619987D260E71D500A52105 /* CategoryCollectionViewCell.xib */; };
+		A655CF60260F5F580016350D /* TopHeadLineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A655CF5E260F5F580016350D /* TopHeadLineTableViewCell.swift */; };
+		A655CF61260F5F580016350D /* TopHeadLineTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A655CF5F260F5F580016350D /* TopHeadLineTableViewCell.xib */; };
+		A655CF65260F5FB40016350D /* TopHeadLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A655CF63260F5FB40016350D /* TopHeadLineViewController.swift */; };
+		A655CF66260F5FB40016350D /* TopHeadLineViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A655CF64260F5FB40016350D /* TopHeadLineViewController.xib */; };
+		A655CF6B260F60300016350D /* extension + SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A655CF6A260F60300016350D /* extension + SearchBar.swift */; };
+		A655CF6E260F603A0016350D /* extension + TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A655CF6D260F603A0016350D /* extension + TableView.swift */; };
+		A655CF71260F60B50016350D /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = A655CF70260F60B50016350D /* Article.swift */; };
+		A655CF74260F60F10016350D /* TopHeadLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A655CF73260F60F10016350D /* TopHeadLine.swift */; };
+		A655CF77260F63C70016350D /* extension + CategoryCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A655CF76260F63C70016350D /* extension + CategoryCollectionView.swift */; };
+		A655CF7B260F63E00016350D /* extension + CountryCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A655CF7A260F63E00016350D /* extension + CountryCollectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -113,6 +123,16 @@
 		A6199877260E6FC100A52105 /* CategoriesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoriesViewController.xib; sourceTree = "<group>"; };
 		A619987C260E71D500A52105 /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		A619987D260E71D500A52105 /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		A655CF5E260F5F580016350D /* TopHeadLineTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopHeadLineTableViewCell.swift; sourceTree = "<group>"; };
+		A655CF5F260F5F580016350D /* TopHeadLineTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopHeadLineTableViewCell.xib; sourceTree = "<group>"; };
+		A655CF63260F5FB40016350D /* TopHeadLineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopHeadLineViewController.swift; sourceTree = "<group>"; };
+		A655CF64260F5FB40016350D /* TopHeadLineViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopHeadLineViewController.xib; sourceTree = "<group>"; };
+		A655CF6A260F60300016350D /* extension + SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension + SearchBar.swift"; sourceTree = "<group>"; };
+		A655CF6D260F603A0016350D /* extension + TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension + TableView.swift"; sourceTree = "<group>"; };
+		A655CF70260F60B50016350D /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		A655CF73260F60F10016350D /* TopHeadLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopHeadLine.swift; sourceTree = "<group>"; };
+		A655CF76260F63C70016350D /* extension + CategoryCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension + CategoryCollectionView.swift"; sourceTree = "<group>"; };
+		A655CF7A260F63E00016350D /* extension + CountryCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension + CountryCollectionView.swift"; sourceTree = "<group>"; };
 		CDF5DDF8A7DD77C4032801A7 /* Pods_NewsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCDD2EF0880E8CF428C96BC2 /* Pods-NewsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsApp.release.xcconfig"; path = "Target Support Files/Pods-NewsApp/Pods-NewsApp.release.xcconfig"; sourceTree = "<group>"; };
 		E0E162479E3E3353D1B4D18A /* Pods-NewsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsApp.debug.xcconfig"; path = "Target Support Files/Pods-NewsApp/Pods-NewsApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -258,6 +278,8 @@
 		A6199758260E0BA300A52105 /* Headlines */ = {
 			isa = PBXGroup;
 			children = (
+				A655CF68260F5FBA0016350D /* UIViewController */,
+				A655CF5D260F5F250016350D /* UIView */,
 			);
 			path = Headlines;
 			sourceTree = "<group>";
@@ -275,6 +297,8 @@
 			children = (
 				A6199763260E0FA000A52105 /* AllSource.swift */,
 				A6199766260E0FBC00A52105 /* Source.swift */,
+				A655CF70260F60B50016350D /* Article.swift */,
+				A655CF73260F60F10016350D /* TopHeadLine.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -300,6 +324,8 @@
 			children = (
 				A6199876260E6FC100A52105 /* CategoriesViewController.swift */,
 				A619977F260E131900A52105 /* CountryViewController.swift */,
+				A655CF76260F63C70016350D /* extension + CategoryCollectionView.swift */,
+				A655CF7A260F63E00016350D /* extension + CountryCollectionView.swift */,
 			);
 			path = UIViewController;
 			sourceTree = "<group>";
@@ -423,6 +449,26 @@
 			path = categories;
 			sourceTree = "<group>";
 		};
+		A655CF5D260F5F250016350D /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				A655CF5E260F5F580016350D /* TopHeadLineTableViewCell.swift */,
+				A655CF5F260F5F580016350D /* TopHeadLineTableViewCell.xib */,
+				A655CF64260F5FB40016350D /* TopHeadLineViewController.xib */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		A655CF68260F5FBA0016350D /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A655CF63260F5FB40016350D /* TopHeadLineViewController.swift */,
+				A655CF6A260F60300016350D /* extension + SearchBar.swift */,
+				A655CF6D260F603A0016350D /* extension + TableView.swift */,
+			);
+			path = UIViewController;
+			sourceTree = "<group>";
+		};
 		E3B4BC28F3AD8C9E27655723 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -495,6 +541,8 @@
 				A6199867260E563400A52105 /* CountriesCollectionViewCell.xib in Resources */,
 				A6199736260E085300A52105 /* Assets.xcassets in Resources */,
 				A6199734260E085100A52105 /* Main.storyboard in Resources */,
+				A655CF61260F5F580016350D /* TopHeadLineTableViewCell.xib in Resources */,
+				A655CF66260F5FB40016350D /* TopHeadLineViewController.xib in Resources */,
 				A6199879260E6FC100A52105 /* CategoriesViewController.xib in Resources */,
 				A6199782260E131900A52105 /* CountryViewController.xib in Resources */,
 			);
@@ -553,6 +601,7 @@
 				A619985C260E4FAC00A52105 /* Helpers.swift in Sources */,
 				A6199858260E4FAC00A52105 /* UITableView+Ext.swift in Sources */,
 				A6199788260E13E600A52105 /* BaseViewController.swift in Sources */,
+				A655CF6E260F603A0016350D /* extension + TableView.swift in Sources */,
 				A6199767260E0FBC00A52105 /* Source.swift in Sources */,
 				A619986E260E57FE00A52105 /* extension + resuable fortableview + collectionview.swift in Sources */,
 				A619986D260E57FE00A52105 /* exetension  for tableVieeCell + collectionviewcell.swift in Sources */,
@@ -562,10 +611,13 @@
 				A619977A260E12D500A52105 /* SavingManager.swift in Sources */,
 				A619986F260E57FE00A52105 /* ReusableView.swift in Sources */,
 				A6199859260E4FAC00A52105 /* String+Ext.swift in Sources */,
+				A655CF6B260F60300016350D /* extension + SearchBar.swift in Sources */,
 				A619987E260E71D500A52105 /* CategoryCollectionViewCell.swift in Sources */,
 				A6199841260E4F4900A52105 /* NewsAPI.swift in Sources */,
 				A6199844260E4F4900A52105 /* NetworkRouter.swift in Sources */,
 				A6199856260E4FAC00A52105 /* UIImageView+Ext.swift in Sources */,
+				A655CF60260F5F580016350D /* TopHeadLineTableViewCell.swift in Sources */,
+				A655CF77260F63C70016350D /* extension + CategoryCollectionView.swift in Sources */,
 				A6199849260E4F4900A52105 /* URLParameterEncoder.swift in Sources */,
 				A6199781260E131900A52105 /* CountryViewController.swift in Sources */,
 				A6199878260E6FC100A52105 /* CategoriesViewController.swift in Sources */,
@@ -585,10 +637,14 @@
 				A619975A260E0E1200A52105 /* Keys.swift in Sources */,
 				A6199866260E563400A52105 /* CountriesCollectionViewCell.swift in Sources */,
 				A619985B260E4FAC00A52105 /* NetworkHelper.swift in Sources */,
+				A655CF65260F5FB40016350D /* TopHeadLineViewController.swift in Sources */,
 				A61997B1260E17CC00A52105 /* InviaLoadingIndicator.swift in Sources */,
+				A655CF74260F60F10016350D /* TopHeadLine.swift in Sources */,
 				A6199872260E5CEA00A52105 /* RemoveDuplicate.swift in Sources */,
 				A6199846260E4F4900A52105 /* HTTPMethod.swift in Sources */,
+				A655CF7B260F63E00016350D /* extension + CountryCollectionView.swift in Sources */,
 				A619985A260E4FAC00A52105 /* UIView+Ext.swift in Sources */,
+				A655CF71260F60B50016350D /* Article.swift in Sources */,
 				A61997BF260E18CC00A52105 /* DeviceUsage.swift in Sources */,
 				A6199792260E160E00A52105 /* NetworkReachability.swift in Sources */,
 				A61997A3260E166B00A52105 /* ErrorService.swift in Sources */,

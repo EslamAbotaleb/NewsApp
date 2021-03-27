@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
    
-        if SavingManager.shared.getValue("categortSelect").isEmpty {
+        if !SavingManager.shared.getBoolValue("categortSelect") {
             let  onBoardingViewController = CountryViewController(nibName: "CountryViewController", bundle: nil)
 
             let navigationConteoller = UINavigationController(rootViewController: onBoardingViewController)
@@ -25,6 +25,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             self.window?.makeKeyAndVisible()
         } else {
             //Mark go to topheading screen
+            let  topHeadlineController = TopHeadLineViewController(nibName: "TopHeadLineViewController", bundle: nil)
+
+            let navigationConteoller = UINavigationController(rootViewController: topHeadlineController)
+            navigationConteoller.modalPresentationStyle = .fullScreen //or .overFullScreen for transparency
+
+            self.window?.rootViewController = navigationConteoller
+            self.window?.makeKeyAndVisible()
         }
       
         return true

@@ -46,7 +46,40 @@ class NewsServiceApi {
         }
     }
     
+    func getTopHeadline(country: String, category: String, completion: @escaping (Result<TopHeadLineModel,StoreError>) -> Void){
+        router.request(.topHeadline(country: country, category: category)) { (data, response, error) in
+            
+            if error != nil {
+                completion(.failure(.connectionError))
+            }
+            guard let response = response as? HTTPURLResponse , response.statusCode == 200 else {
+                completion(.failure(.invalidResponse))
+                return
+            }
+            
+            guard let data = data else {
+                completion(.failure(.invalidDate))
+                return
+            }
+            
+            do {
+                let decoder = JSONDecoder()
+                decoder.keyDecodingStrategy = .convertFromSnakeCase
+                let topHeadline = try decoder.decode(TopHeadLineModel.self, from: data)
+                DispatchQueue.main.async {
+                    completion(.success(topHeadline))
+
+                }
+            }
+            catch{
+                completion(.failure(.decodeError))
+            }
+        }
+    }
+    
    
+    
+    
     
     
     func downloadImage(from stringURL:String , completed: @escaping (UIImage?) -> Void) {
