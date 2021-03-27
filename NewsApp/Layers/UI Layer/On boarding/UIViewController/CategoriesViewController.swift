@@ -52,7 +52,8 @@ class CategoriesViewController: BaseViewController {
 
         //Mark go to topheading screen
         let  topHeadlineController = TopHeadLineViewController(nibName: "TopHeadLineViewController", bundle: nil)
-
+        topHeadlineController.countryName = self.countryName
+        topHeadlineController.categoriesSelected = self.categoriesSelected
         let navigationConteoller = UINavigationController(rootViewController: topHeadlineController)
         navigationConteoller.modalPresentationStyle = .fullScreen //or .overFullScreen for transparency
 

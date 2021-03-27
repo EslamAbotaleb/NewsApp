@@ -68,6 +68,12 @@
 		A655CF74260F60F10016350D /* TopHeadLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A655CF73260F60F10016350D /* TopHeadLine.swift */; };
 		A655CF77260F63C70016350D /* extension + CategoryCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A655CF76260F63C70016350D /* extension + CategoryCollectionView.swift */; };
 		A655CF7B260F63E00016350D /* extension + CountryCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A655CF7A260F63E00016350D /* extension + CountryCollectionView.swift */; };
+		A655CFB1260F6CF50016350D /* ArticleDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A655CFAF260F6CF50016350D /* ArticleDataModel.xcdatamodeld */; };
+		A655CFB8260F761E0016350D /* ShowAllFavouritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A655CFB6260F761E0016350D /* ShowAllFavouritesViewController.swift */; };
+		A655CFB9260F761E0016350D /* ShowAllFavouritesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A655CFB7260F761E0016350D /* ShowAllFavouritesViewController.xib */; };
+		A655CFBD260F76360016350D /* extension + Tableview.swift in Sources */ = {isa = PBXBuildFile; fileRef = A655CFBC260F76360016350D /* extension + Tableview.swift */; };
+		A655CFC1260F77A40016350D /* FavouirteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A655CFBF260F77A40016350D /* FavouirteTableViewCell.swift */; };
+		A655CFC2260F77A40016350D /* FavouirteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A655CFC0260F77A40016350D /* FavouirteTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -133,6 +139,12 @@
 		A655CF73260F60F10016350D /* TopHeadLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopHeadLine.swift; sourceTree = "<group>"; };
 		A655CF76260F63C70016350D /* extension + CategoryCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension + CategoryCollectionView.swift"; sourceTree = "<group>"; };
 		A655CF7A260F63E00016350D /* extension + CountryCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension + CountryCollectionView.swift"; sourceTree = "<group>"; };
+		A655CFB0260F6CF50016350D /* ArticleDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ArticleDataModel.xcdatamodel; sourceTree = "<group>"; };
+		A655CFB6260F761E0016350D /* ShowAllFavouritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowAllFavouritesViewController.swift; sourceTree = "<group>"; };
+		A655CFB7260F761E0016350D /* ShowAllFavouritesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShowAllFavouritesViewController.xib; sourceTree = "<group>"; };
+		A655CFBC260F76360016350D /* extension + Tableview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension + Tableview.swift"; sourceTree = "<group>"; };
+		A655CFBF260F77A40016350D /* FavouirteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouirteTableViewCell.swift; sourceTree = "<group>"; };
+		A655CFC0260F77A40016350D /* FavouirteTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavouirteTableViewCell.xib; sourceTree = "<group>"; };
 		CDF5DDF8A7DD77C4032801A7 /* Pods_NewsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCDD2EF0880E8CF428C96BC2 /* Pods-NewsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsApp.release.xcconfig"; path = "Target Support Files/Pods-NewsApp/Pods-NewsApp.release.xcconfig"; sourceTree = "<group>"; };
 		E0E162479E3E3353D1B4D18A /* Pods-NewsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsApp.debug.xcconfig"; path = "Target Support Files/Pods-NewsApp/Pods-NewsApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -187,6 +199,7 @@
 				A6199735260E085300A52105 /* Assets.xcassets */,
 				A6199737260E085300A52105 /* LaunchScreen.storyboard */,
 				A619973A260E085300A52105 /* Info.plist */,
+				A655CFAF260F6CF50016350D /* ArticleDataModel.xcdatamodeld */,
 			);
 			path = NewsApp;
 			sourceTree = "<group>";
@@ -222,6 +235,7 @@
 		A6199746260E097300A52105 /* UI Layer */ = {
 			isa = PBXGroup;
 			children = (
+				A655CFB3260F75EE0016350D /* ShowAllFavourites */,
 				A6199758260E0BA300A52105 /* Headlines */,
 				A6199756260E0B9600A52105 /* On boarding */,
 			);
@@ -469,6 +483,34 @@
 			path = UIViewController;
 			sourceTree = "<group>";
 		};
+		A655CFB3260F75EE0016350D /* ShowAllFavourites */ = {
+			isa = PBXGroup;
+			children = (
+				A655CFB5260F76050016350D /* UIViewController */,
+				A655CFB4260F75FF0016350D /* UIView */,
+			);
+			path = ShowAllFavourites;
+			sourceTree = "<group>";
+		};
+		A655CFB4260F75FF0016350D /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				A655CFB7260F761E0016350D /* ShowAllFavouritesViewController.xib */,
+				A655CFBF260F77A40016350D /* FavouirteTableViewCell.swift */,
+				A655CFC0260F77A40016350D /* FavouirteTableViewCell.xib */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		A655CFB5260F76050016350D /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A655CFB6260F761E0016350D /* ShowAllFavouritesViewController.swift */,
+				A655CFBC260F76360016350D /* extension + Tableview.swift */,
+			);
+			path = UIViewController;
+			sourceTree = "<group>";
+		};
 		E3B4BC28F3AD8C9E27655723 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -536,6 +578,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A655CFC2260F77A40016350D /* FavouirteTableViewCell.xib in Resources */,
 				A6199739260E085300A52105 /* LaunchScreen.storyboard in Resources */,
 				A619987F260E71D500A52105 /* CategoryCollectionViewCell.xib in Resources */,
 				A6199867260E563400A52105 /* CountriesCollectionViewCell.xib in Resources */,
@@ -543,6 +586,7 @@
 				A6199734260E085100A52105 /* Main.storyboard in Resources */,
 				A655CF61260F5F580016350D /* TopHeadLineTableViewCell.xib in Resources */,
 				A655CF66260F5FB40016350D /* TopHeadLineViewController.xib in Resources */,
+				A655CFB9260F761E0016350D /* ShowAllFavouritesViewController.xib in Resources */,
 				A6199879260E6FC100A52105 /* CategoriesViewController.xib in Resources */,
 				A6199782260E131900A52105 /* CountryViewController.xib in Resources */,
 			);
@@ -600,6 +644,7 @@
 				A61997CB260E1AB000A52105 /* NVActivityIndicatorPresenter.swift in Sources */,
 				A619985C260E4FAC00A52105 /* Helpers.swift in Sources */,
 				A6199858260E4FAC00A52105 /* UITableView+Ext.swift in Sources */,
+				A655CFBD260F76360016350D /* extension + Tableview.swift in Sources */,
 				A6199788260E13E600A52105 /* BaseViewController.swift in Sources */,
 				A655CF6E260F603A0016350D /* extension + TableView.swift in Sources */,
 				A6199767260E0FBC00A52105 /* Source.swift in Sources */,
@@ -625,6 +670,8 @@
 				A6199731260E085100A52105 /* ViewController.swift in Sources */,
 				A6199842260E4F4900A52105 /* NewsService.swift in Sources */,
 				A619972D260E085100A52105 /* AppDelegate.swift in Sources */,
+				A655CFB1260F6CF50016350D /* ArticleDataModel.xcdatamodeld in Sources */,
+				A655CFC1260F77A40016350D /* FavouirteTableViewCell.swift in Sources */,
 				A6199764260E0FA000A52105 /* AllSource.swift in Sources */,
 				A61997A1260E166B00A52105 /* ErrorServiceLocalizations.swift in Sources */,
 				A6199793260E160E00A52105 /* NetworkServiceResult.swift in Sources */,
@@ -639,6 +686,7 @@
 				A619985B260E4FAC00A52105 /* NetworkHelper.swift in Sources */,
 				A655CF65260F5FB40016350D /* TopHeadLineViewController.swift in Sources */,
 				A61997B1260E17CC00A52105 /* InviaLoadingIndicator.swift in Sources */,
+				A655CFB8260F761E0016350D /* ShowAllFavouritesViewController.swift in Sources */,
 				A655CF74260F60F10016350D /* TopHeadLine.swift in Sources */,
 				A6199872260E5CEA00A52105 /* RemoveDuplicate.swift in Sources */,
 				A6199846260E4F4900A52105 /* HTTPMethod.swift in Sources */,
@@ -853,6 +901,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A655CFAF260F6CF50016350D /* ArticleDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A655CFB0260F6CF50016350D /* ArticleDataModel.xcdatamodel */,
+			);
+			currentVersion = A655CFB0260F6CF50016350D /* ArticleDataModel.xcdatamodel */;
+			path = ArticleDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A6199721260E085100A52105 /* Project object */;
 }
